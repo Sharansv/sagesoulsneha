@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx react-scripts:*)",
+      "Bash(grep -n \"line-height: 0\" \"c:\\\\Users\\\\Sharan\\\\Downloads\\\\sneha-sagesoul-fixed\\\\sneha-sagesoul\\\\frontend\\\\src\\\\pages\"/*.css)"
+    ]
+  }
+}

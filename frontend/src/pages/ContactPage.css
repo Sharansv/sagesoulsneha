@@ -1,0 +1,231 @@
+/* ContactPage responsive styles */
+.contact-page { padding-top: 80px; }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info-card {
+  padding: 48px 44px;
+  margin-bottom: 24px;
+}
+
+.contact-info-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  color: #e8d5ff;
+  margin-bottom: 32px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-link-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  padding: 16px 20px;
+  background: rgba(45, 27, 78, 0.4);
+  border-radius: 14px;
+  border: 1px solid rgba(192, 132, 252, 0.15);
+  transition: all 0.3s;
+  color: inherit;
+}
+
+.contact-link-item:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateX(8px);
+}
+
+.contact-link-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c084fc;
+  flex-shrink: 0;
+}
+
+.contact-link-label {
+  font-size: 12px;
+  color: rgba(167, 139, 250, 0.6);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.contact-link-value {
+  font-size: 15px;
+  color: #e8d5ff;
+}
+
+.contact-social-card {
+  padding: 40px 44px;
+}
+
+.contact-social-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  color: #e8d5ff;
+  margin-bottom: 24px;
+}
+
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-social-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  padding: 14px 18px;
+  background: rgba(45, 27, 78, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(192, 132, 252, 0.12);
+  transition: all 0.3s;
+}
+
+.contact-social-item:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateX(6px);
+}
+
+.contact-social-name {
+  font-size: 13px;
+  color: #e8d5ff;
+  font-weight: 500;
+}
+
+.contact-social-handle {
+  font-size: 12px;
+  color: rgba(167, 139, 250, 0.6);
+}
+
+/* Form side */
+.contact-form-card {
+  padding: 52px 48px;
+}
+
+.contact-form-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  color: #e8d5ff;
+  margin-bottom: 8px;
+}
+
+.contact-form-subtitle {
+  color: rgba(167, 139, 250, 0.7);
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+
+.contact-submit-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 15px;
+  padding: 16px;
+}
+
+.contact-submit-btn:disabled {
+  opacity: 0.7;
+}
+
+/* Success state */
+.contact-success {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact-success-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.contact-success-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: #e8d5ff;
+  margin-bottom: 16px;
+}
+
+.contact-success-text {
+  color: rgba(167, 139, 250, 0.85);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Bottom quote */
+.contact-quote-card {
+  background: rgba(45, 27, 78, 0.2);
+  border: 1px solid rgba(192, 132, 252, 0.1);
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-quote-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-style: italic;
+  color: rgba(232, 213, 255, 0.9);
+  line-height: 1.7;
+}
+
+.contact-quote-author {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--accent2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info-card,
+  .contact-social-card,
+  .contact-form-card {
+    padding: 32px 24px;
+  }
+
+  .contact-quote-card {
+    padding: 36px 24px;
+  }
+
+  .contact-quote-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-card,
+  .contact-social-card,
+  .contact-form-card {
+    padding: 28px 20px;
+  }
+
+  .contact-info-title,
+  .contact-form-title {
+    font-size: 24px;
+  }
+}

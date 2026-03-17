@@ -1,0 +1,69 @@
+.sticky-book-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 997;
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.sticky-book-btn.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.sticky-book-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #7c3aed, #c084fc, #e879f9);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.5);
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: all 0.3s;
+}
+
+.sticky-book-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.6);
+}
+
+@media (max-width: 768px) {
+  .sticky-book-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .sticky-book-link {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-book-btn {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+  }
+
+  .sticky-book-link {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}
