@@ -1,5 +1,5 @@
 /* ContactPage responsive styles */
-.contact-page { padding-top: 80px; }
+.contact-page { padding-top: 80px; overflow-x: hidden; }
 
 .contact-layout {
   display: grid;

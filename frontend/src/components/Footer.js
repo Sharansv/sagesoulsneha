@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Footer.css';
 
 export default function Footer() {
@@ -30,6 +30,9 @@ export default function Footer() {
               </a>
               <a href="https://wa.me/919353620629" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp">
                 <FaWhatsapp />
+              </a>
+              <a href="https://www.linkedin.com/in/sneha-sagesoul-b9400a3b8/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+                <FaLinkedin />
               </a>
             </div>
           </div>

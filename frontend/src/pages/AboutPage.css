@@ -1,4 +1,4 @@
-.about-page { padding-top: 80px; }
+.about-page { padding-top: 80px; overflow-x: hidden; }
 
 .about-hero {
   position: relative;

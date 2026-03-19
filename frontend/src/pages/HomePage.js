@@ -137,7 +137,7 @@ export default function HomePage() {
 
                   <div className="owner-image-container">
                     <div className="owner-image-placeholder">
-                      <img src="/Images/sneha1.jpeg" alt="Sneha K - Certified Life Coach" />
+                      <img src="/images/sneha1.jpeg" alt="Sneha K - Certified Life Coach" />
                     </div>
                     <div className="owner-image-ring" />
                   </div>

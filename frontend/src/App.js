@@ -5,6 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import StickyBookBtn from './components/StickyBookBtn';
+import ScrollToTop from './components/ScrollToTop';
+import GoToTop from './components/GoToTop';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import CoachingPage from './pages/CoachingPage';
@@ -16,6 +18,7 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -27,6 +30,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <StickyBookBtn />
+      <GoToTop />
       <Footer />
       <ToastContainer
         position="bottom-right"

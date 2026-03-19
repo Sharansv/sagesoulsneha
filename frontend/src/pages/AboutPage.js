@@ -64,7 +64,7 @@ export default function AboutPage() {
             <AnimatedSection animation="fadeInRight" className="story-sidebar">
               <div className="about-owner-image glass-card">
                 <div className="about-owner-placeholder">
-                  <img src="/Images/sneha2.jpeg" alt="Sneha K - Certified Life Coach" />
+                  <img src="/images/sneha2.jpeg" alt="Sneha K - Certified Life Coach" />
                 </div>
                 <div className="about-owner-caption">
                   <strong>Sneha K</strong>

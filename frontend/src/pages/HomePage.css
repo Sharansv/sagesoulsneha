@@ -1,3 +1,5 @@
+.home-page { overflow-x: hidden; }
+
 /* ===== HERO ===== */
 .hero-section {
   min-height: 100vh;
